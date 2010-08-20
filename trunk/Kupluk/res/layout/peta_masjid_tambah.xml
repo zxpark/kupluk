@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+  
+  <TextView
+  android:text="Nama Masjid :"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:gravity="left"
+  android:textStyle="bold"/>
+  
+  <EditText
+  	android:id="@+id/txtNamaMasjid"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"/>
+  
+  <RelativeLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+  	
+  	<EditText
+  	android:id="@+id/txtAlamatMasjid"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="200dip"
+  	android:singleLine="false"/>
+  	
+  	<Button
+  	android:id="@+id/tblLihatPeta"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_toRightOf="@id/txtNamaMasjid"
+  	android:paddingLeft="120dip"/>
+  	
+  </RelativeLayout>
+  
+  <TextView
+  android:text="Koordinat :"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:gravity="left"/>
+  
+  <TextView
+  android:id="@+id/lblKoordinat"
+  android:text="Disini tampil koordinat"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"/>
+</LinearLayout>

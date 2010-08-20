@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.amiral.kupluk"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/nama_program" android:debuggable="true">
+        <activity android:name=".KuplukMain"
+                  android:label="@string/nama_program"  android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|locale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+        	android:name=".JadwalShalat"
+        	android:label="@string/jadwal_shalat_judul"/>
+        <activity
+        	android:name=".Kiblat"
+        	android:label="@string/kiblat_judul">
+        </activity>
+        
+        <activity
+        	android:name=".PetaMasjid"
+        	android:label="@string/peta_masjid_judul"/>
+        <activity
+        	android:name=".Pengaturan"
+        	android:label="@string/pengaturan_judul"/>
+        	
+        <activity
+        	android:name=".Tentang"
+        	android:label="@string/tentang_judul"/>
+    
+    <uses-library android:name="com.google.android.maps"/>    
+    <service android:name=".service.KuplukService"></service>
+</application>
+    
+    
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+   	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-sdk android:minSdkVersion="3" />
+    <uses-sdk android:minSdkVersion="4" />
+    
+
+</manifest> 

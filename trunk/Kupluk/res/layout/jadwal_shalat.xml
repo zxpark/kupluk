@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/latar"
+  >
+  
+  <TextView
+		android:id="@+id/label_judul"
+		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffff"
+		android:gravity="center"
+		android:paddingTop="111dip"/>
+	
+	<TextView
+		android:id="@+id/label_subuh"
+		android:text="Subuh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffff"
+		android:paddingLeft="50dip"
+		android:layout_below="@id/label_judul"
+		android:paddingTop="25dip"/>
+	
+	<TextView
+		android:id="@+id/label_zuhur"
+		android:text="Zuhur"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffff"
+		android:paddingLeft="50dip"
+		android:layout_below="@id/label_subuh"
+		android:paddingTop="15dip"/>
+		
+	<TextView
+		android:id="@+id/label_ashar"
+		android:text="Ashar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffff"
+		android:paddingLeft="50dip"
+		android:layout_below="@id/label_zuhur"
+		android:paddingTop="15dip"/>
+	
+	<TextView
+		android:id="@+id/label_maghrib"
+		android:text="Magrib"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffff"
+		android:paddingLeft="50dip"
+		android:layout_below="@id/label_ashar"
+		android:paddingTop="15dip"/>
+		
+	<TextView
+		android:id="@+id/label_isya"
+		android:text="Isya"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffff"
+		android:paddingLeft="50dip"
+		android:layout_below="@id/label_maghrib"
+		android:paddingTop="15dip"/>
+		
+	<TextView
+		android:id="@+id/label_subuh_jam"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffcc"
+		android:paddingRight="50dip"
+		android:paddingLeft="210dip"
+		android:layout_below="@id/label_judul"
+		android:paddingTop="25dip"/>
+	
+	<TextView
+		android:id="@+id/label_zuhur_jam"
+	
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffcc"
+		android:paddingLeft="210dip"
+		android:layout_below="@id/label_subuh_jam"
+		android:paddingTop="15dip"/>
+	
+	<TextView
+		android:id="@+id/label_ashar_jam"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffcc"
+		android:paddingLeft="210dip"
+		android:layout_below="@id/label_zuhur_jam"
+		android:paddingTop="15dip"/>
+	
+	<TextView
+		android:id="@+id/label_maghrib_jam"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffcc"
+		android:paddingLeft="210dip"
+		android:layout_below="@id/label_ashar_jam"
+		android:paddingTop="15dip"/>
+	
+	<TextView
+		android:id="@+id/label_isya_jam"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:textColor="#ffffffcc"
+		android:paddingLeft="210dip"
+		android:layout_below="@id/label_maghrib_jam"
+		android:paddingTop="15dip"/>	
+		
+	<TextView
+		android:id="@+id/coba"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15sp"
+		android:paddingLeft="210dip"
+		android:layout_below="@id/label_isya"
+		android:paddingTop="20dip"/>	
+</RelativeLayout>

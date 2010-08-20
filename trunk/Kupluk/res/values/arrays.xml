@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="daftar_mode_pengingat">
+		<item>Suara Azan</item>
+		<item>Getar</item>
+		<item>Lampu</item>
+	</string-array>
+	
+	<string-array name="daftar_mode_pengingat_nilai">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	
+	
+	<string-array name="daftar_metode_perhitungan">
+		<item>Indonesia</item>
+		<item>Karaci</item>
+		<item>Amerika Utara</item>
+		<item>Liga Muslim</item>
+		<item>Ummu Al-Quran</item>
+		<item>Mesir</item>
+	</string-array>
+	
+	<string-array name="daftar_metode_perhitungan_nilai">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+	
+	<string-array name="daftar_mazhab">
+		<item>Imam Syafi\'i</item>
+		<item>Imam Hanafi</item>
+	</string-array>
+	
+	<string-array name="daftar_mazhab_nilai">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	
+	<array name="daftar_bahasa">
+		<item>Bahasa Indonesia</item>
+		<item>English</item>
+		<item>Deutsch</item>
+	</array>
+	
+</resources>
