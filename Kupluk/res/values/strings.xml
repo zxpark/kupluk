@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="nama_program">Kupluk</string>
+    
+    <!-- Nama Activity -->
+    <string name="jadwal_shalat_judul">Jadwal Shalat</string>
+    <string name="kiblat_judul">Arah Kiblat</string>
+    <string name="peta_masjid_judul">Lokasi Masjid</string>
+    <string name="pengaturan_judul">Pengaturan</string>
+    <string name="tentang_judul">Tentang</string>
+    
+    <!-- Penamaan Tab -->
+    <string name="jadwal_shalat_tab">Shalat</string>
+    <string name="kiblat_tab">Kiblat</string>
+    <string name="peta_masjid_tab">Masjid</string>
+    <string name="pengaturan_tab">Atur</string>
+    
+    <!-- Pengaturan -->
+	
+	<string name="pengaturan_perhitungan_shalat">Metode Perhitungan</string>
+    <string name="pengaturan_perhitungan_shalat_ket">Metode Perhitungan Shalat</string>
+    <string name="pengaturan_perhitungan_shalat_judul">Pilih Metode</string>
+    
+	<string name="pengaturan_mazhab">Mazhab</string>
+    <string name="pengaturan_mazhab_ket">Penentuan waktu Ashar</string>
+    <string name="pengaturan_mazhab_judul">Pilih Mazhab</string>
+    
+    <string name="pengaturan_pengingat">Waktu Shalat</string>
+    <string name="pengaturan_pengingat_ket">Pilih waktu shalat yang ingin diingatkan</string>
+    
+	<string name="pengaturan_mode_pengingat">Mode Pengingat</string>
+	<string name="pengaturan_mode_pengingat_ket">Atur Mode Pengingat</string>
+	<string name="pengaturan_mode_pengingat_judul">Pilih Mode Pengingat</string>
+	    
+    <string name="pengaturan_ingatkan_teman">Ingatkan Teman</string>
+    <string name="pengaturan_ingatkan_teman_ket">Ingatkan teman ketika waktu shalat tiba</string>
+    <string name="pengaturan_no_handphone">Masukkan No Handphone</string>
+    <string name="pengaturan_isi_pesan">Isi pesan</string>
+    <string name="pengaturan_isi_pesan_default">Assalamu\'alaikum \nWaktu shalat sudah tiba \nShalat Yuk!</string>
+    
+    <!-- Kategori Pengaturan -->
+    <string name="pengaturan_kategori_shalat">Pengaturan Shalat</string>
+    <string name="pengaturan_kategori_shalat_ket">Pengaturan metode perhitungan dan Mazhab</string>
+    
+    <string name="pengaturan_kategori_pengingat">Pengaturan Pengingat</string>
+    <string name="pengaturan_kategori_pengingat_ket">Pengaturan pengingat</string>
+    
+    <string name="compass_disclaimer">Compass works in portrait mode.</string>
+    
+    <!-- Kiblat -->
+    <string name="cardinal_north">KB</string>
+    
+    <!-- Menu -->
+    <string name="tentang_label">About</string>
+    <string name="tentang_sortcut">t</string>
+</resources>

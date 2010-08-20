@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="pengaturan_kupluk"
+	android:title="@string/pengaturan_judul">
+
+	<PreferenceCategory
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="pengaturan_shalat"
+	android:title="@string/pengaturan_kategori_shalat"
+	android:summary="@string/pengaturan_kategori_shalat_ket">
+		<ListPreference 
+			android:key="pilihan_metode_perhitungan"
+			android:title="@string/pengaturan_perhitungan_shalat"
+			android:summary="@string/pengaturan_perhitungan_shalat_ket"
+			android:entries="@array/daftar_metode_perhitungan"
+			android:entryValues="@array/daftar_metode_perhitungan_nilai"
+			android:dialogTitle="@string/pengaturan_perhitungan_shalat_judul"
+			android:defaultValue="0">
+		</ListPreference>
+		
+		<ListPreference
+			android:key="pilihan_mazhab"
+			android:title="@string/pengaturan_mazhab"
+			android:summary="@string/pengaturan_mazhab_ket"
+			android:entries="@array/daftar_mazhab"
+			android:entryValues="@array/daftar_mazhab_nilai"
+			android:dialogTitle="@string/pengaturan_mazhab_judul"
+			android:defaultValue="0">
+		</ListPreference>
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:key="pengaturan_pengingat"
+		android:title="@string/pengaturan_kategori_pengingat"
+		android:summary="@string/pengaturan_kategori_pengingat_ket">
+		<PreferenceScreen 
+		android:title="@string/pengaturan_pengingat"
+		android:summary="@string/pengaturan_pengingat_ket">
+			<CheckBoxPreference
+				android:key="set_zuhur"
+				android:title="Zuhur"
+				android:defaultValue="true"/>
+			<CheckBoxPreference
+				android:key="set_ashar"
+				android:title="Ashar"
+				android:defaultValue="true"/>
+			<CheckBoxPreference
+				android:key="set_maghrib"
+				android:title="Maghrib"
+				android:defaultValue="true"/>
+			<CheckBoxPreference
+				android:key="set_isya"
+				android:title="Isya"
+				android:defaultValue="true"/>
+			<CheckBoxPreference
+				android:key="set_subuh"
+				android:title="Subuh"
+				android:defaultValue="true"/>
+			<!-- 
+			<PreferenceCategory android:title="Ketentuan Pengingatan">
+				<CheckBoxPreference android:title="Waktu shalat"
+				android:summary="Mengingatkan ketika waktu shalat"
+				android:defaultValue="true"/>
+				<CheckBoxPreference
+					android:title="Sebelum"
+					android:summary="Mengingatkan 5 menit sebelumnya"/>
+			</PreferenceCategory>
+			 -->
+		</PreferenceScreen>
+		<!-- 
+		<RingtonePreference
+			android:name="Azan Preference"
+			android:summary="@string/pengaturan_azhan_ket"
+			android:title="@string/pengaturan_azhan"
+			android:key="pilihan_suarah_azhan" />
+		 -->
+		 
+		<ListPreference 
+			android:key="pilihan_mode_pengingat"
+			android:title="@string/pengaturan_mode_pengingat"
+			android:summary="@string/pengaturan_mode_pengingat_ket"
+			android:entries="@array/daftar_mode_pengingat"
+			android:entryValues="@array/daftar_mode_pengingat_nilai"
+			android:dialogTitle="@string/pengaturan_mode_pengingat_judul"
+			android:defaultValue="0">
+		</ListPreference>
+		
+		<!-- 
+		<PreferenceScreen
+		android:key="ingatkan_teman"
+		android:title="@string/pengaturan_ingatkan_teman"
+		android:summary="@string/pengaturan_ingatkan_teman_ket">
+	
+		<EditTextPreference
+			android:key="no_handphone"
+			android:title="@string/pengaturan_no_handphone"
+			android:dialogTitle="Nomor Handphone">
+		</EditTextPreference>
+		<EditTextPreference
+			android:key="isi_pesan"
+			android:title="@string/pengaturan_isi_pesan"
+			android:defaultValue="@string/pengaturan_isi_pesan_default">
+		</EditTextPreference>
+	</PreferenceScreen>
+		 -->
+	</PreferenceCategory>
+</PreferenceScreen>
