@@ -5,6 +5,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import com.amiral.kupluk.JadwalShalat;
+import com.amiral.kupluk.KuplukMain;
 import com.amiral.kupluk.Pengaturan;
 import com.amiral.kupluk.R;
 
@@ -204,7 +205,7 @@ public class KuplukService extends Service {
 		// The PendingIntent to launch our activity if the user selects this
 		// notification
 		PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
-				new Intent(this, JadwalShalat.class), 0);
+				new Intent(this, KuplukMain.class), 0);
 
 		// Set the info for the views that show in the notification panel.
 		notification.setLatestEventInfo(this, "Kupluk - Remainder", text,
