@@ -3,7 +3,7 @@
       package="com.amiral.kupluk"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:icon="@drawable/icon" android:label="@string/nama_program" android:debuggable="true">
+    <application android:icon="@drawable/icon" android:label="@string/nama_program" android:debuggable="true" android:theme="@style/CustomTheme">
         <activity android:name=".KuplukMain"
                   android:label="@string/nama_program"  android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|locale">
             <intent-filter>

@@ -44,14 +44,16 @@ public class Kiblat extends Activity {
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 		setContentView(R.layout.kiblat);
-
+/*
 		TextView textView = new TextView(this);
 		textView.setText("kiblat dapat berjalan dalam mode tidur");
 
 		Toast toast = new Toast(this);
 		toast.setView(textView);
 		toast.show();
-
+*/
+	
+		Toast.makeText(getBaseContext(), "kiblat dapat berjalam dalam mode tidur", Toast.LENGTH_SHORT).show();
 		// inisialisasi Lokasi
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 

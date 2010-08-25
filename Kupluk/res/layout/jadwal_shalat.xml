@@ -85,7 +85,7 @@
 		android:textStyle="bold"
 		android:textColor="#ffffffcc"
 		android:paddingRight="50dip"
-		android:paddingLeft="210dip"
+		android:paddingLeft="205dip"
 		android:layout_below="@id/label_judul"
 		android:paddingTop="25dip"/>
 	
@@ -97,7 +97,7 @@
 		android:textSize="17sp"
 		android:textStyle="bold"
 		android:textColor="#ffffffcc"
-		android:paddingLeft="210dip"
+		android:paddingLeft="205dip"
 		android:layout_below="@id/label_subuh_jam"
 		android:paddingTop="15dip"/>
 	
@@ -108,7 +108,7 @@
 		android:textSize="17sp"
 		android:textStyle="bold"
 		android:textColor="#ffffffcc"
-		android:paddingLeft="210dip"
+		android:paddingLeft="205dip"
 		android:layout_below="@id/label_zuhur_jam"
 		android:paddingTop="15dip"/>
 	
@@ -119,7 +119,7 @@
 		android:textSize="17sp"
 		android:textStyle="bold"
 		android:textColor="#ffffffcc"
-		android:paddingLeft="210dip"
+		android:paddingLeft="205dip"
 		android:layout_below="@id/label_ashar_jam"
 		android:paddingTop="15dip"/>
 	
@@ -130,7 +130,7 @@
 		android:textSize="17sp"
 		android:textStyle="bold"
 		android:textColor="#ffffffcc"
-		android:paddingLeft="210dip"
+		android:paddingLeft="205dip"
 		android:layout_below="@id/label_maghrib_jam"
 		android:paddingTop="15dip"/>	
 		
@@ -139,7 +139,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textSize="15sp"
-		android:paddingLeft="210dip"
+		android:paddingLeft="205dip"
 		android:layout_below="@id/label_isya"
 		android:paddingTop="20dip"/>	
 </RelativeLayout>
