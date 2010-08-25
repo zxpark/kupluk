@@ -1,6 +1,9 @@
 package com.amiral.kupluk;
 
+import java.io.IOException;
 import java.util.Calendar;
+import java.util.List;
+import java.util.Locale;
 
 import com.amiral.kupluk.service.FormatWaktu;
 import com.amiral.kupluk.service.KuplukService;
@@ -12,7 +15,9 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.location.Address;
 import android.location.Criteria;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -76,9 +81,7 @@ public class JadwalShalat extends Activity {
 		bulan = c.get(Calendar.MONTH) + 1;
 		tahun = c.get(Calendar.YEAR);
 		zonaWaktu = Variabel.getZonaWaktu();
-		TextView tv ;
-		tv = (TextView) findViewById(R.id.label_judul);
-		tv.setText(""+hari + " - "+bulan +" - "+ tahun);
+		
 		// inisialisasi Lokasi
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
@@ -92,11 +95,48 @@ public class JadwalShalat extends Activity {
 
 		String provider = locationManager.getBestProvider(criteria, true);
 		location = locationManager.getLastKnownLocation(provider);
-
+		
+//		double lat= location.getLatitude();
+//		double lon= location.getLongitude();
+//		double alt= location.getAltitude();
+		
+		double lat=-6.166666667;
+		double lon=106.85;
+		double alt=50;
+		/**
+		 * Untuk menampilkan lokasi user berada pada judul jadwal shalat
+		 * 
+		 */
+		
+		String namaKota;
+		String alamat = null;
+		TextView tv ;
+		tv = (TextView) findViewById(R.id.label_judul);
+		
+		if (location!= null){
+			Geocoder gc = new Geocoder(this, Locale.getDefault());
+			
+			try{
+				List<Address> addresses= gc.getFromLocation(lat, lon, 1);
+				StringBuilder sb= new StringBuilder();
+				if(addresses.size()>0){
+					Address address= addresses.get(0);
+					
+					sb.append(address.getLocality());
+				}
+				alamat = sb.toString();
+				tv.setText(alamat +", "+hari + "/"+bulan +"/"+ tahun);
+			} catch (IOException e) {}
+		}else{
+			tv.setText(hari + "/"+bulan +"/"+ tahun);
+		}
+		
+		
+		
 		/**
 		 * Untuk mengambil nilai metode yang telah ditentukan oleh user
 		 * 
-		 * @params metode merupakan tempenat menyimpan sementara
+		 * @params metode merupakan tempat menyimpan sementara
 		 */
 		metode = Pengaturan.getMetodePerhitungan(this);
 		char a = metode.charAt(0);
@@ -146,12 +186,8 @@ public class JadwalShalat extends Activity {
 		mazhab = m == '0' ? 1 : 2;
 
 		// Menghitung variabel
-		shalat = new PerhitunganShalat(-6.166666667, 106.85, 50, zonaWaktu,
-				hari, bulan, tahun);
-
-		// shalat= new PerhitunganShalat(location.getLatitude(),
-		// location.getLongitude(), location.getAltitude(), zonaWaktu, hari,
-		// bulan, tahun);
+		 shalat= new PerhitunganShalat(lat,lon, alt, zonaWaktu, hari,
+		 bulan, tahun);
 
 		shalat.setSudutSubuh(sudutSubuh);
 		shalat.setSudutIsya(sudutIsya);
